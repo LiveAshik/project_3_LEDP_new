@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "SolaimanLipi", arial, sans-serif;
+    font-size: 18px;
+}
+@font-face{
+    font-family: "SolaimanLipi";
+    src: url("fonts/SolaimanLipi_Normal.ttf");
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.mdash{
+    text-align: center;
+    color: #278e42;
+    margin-bottom: 30px;
+}
+
+
+/*HEADER PART CSS*/
+header{
+    position: fixed;
+	top:0;
+    width: 100%;
+    background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+	
+}
+header:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-logo {
+    width: 170px;
+    height: auto;
+    padding: 5px 0;
+    float: left;
+}
+.main-logo img{
+    width: 100%;
+}
+
+.main-nav {
+    float: left;
+}
+.main-nav ul {
+    padding-left: 50px;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    display: block;
+    padding: 35px 18px 25px;
+    color: #414756; 
+}
+.main-nav .active,
+.main-nav ul li a:hover{
+    color: #278e42;
+}
+
+.main-btn {
+    float: right;
+}
+.main-btn li{
+    padding: 23px 8px 25px;
+}
+.main-btn a{
+    display: block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: #278e42;
+    color: #fff;
+    font-size: 14px;
+}
+.main-btn a:hover{
+    color: #22A23F;
+}
+
+
+
+
+/*COVER IMG CSS*/
+.cover-img {
+    width: 100%;
+    height: 550px;
+    background-image: url(img/slider-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	margin-top:90px;
+}
+
+
+
+
+/*NOTICE AREA CSS*/
+
+.notice {
+    width: 100%;
+    background-color: #FAFBFE;
+    overflow: hidden;
+}
+.notice-img {
+    width: 45%;
+    float: left;
+}
+.notice-img img{
+    width: 460px;
+    float: right;
+    padding: 60px 0;
+}
+.notice-content {
+    width: 45%;
+    overflow: hidden;
+}
+.notice-content h2{
+    padding: 200px 0 20px 30px;
+}
+.notice-content p{
+    padding-left: 30px;
+    font-size: 16px;
+}
+.notice-content p a{
+    color: #414756;
+}
+.notice-content p i{
+    padding-right: 10px;
+}
+.notice-content p a{
+    color: #22A23F;
+}
+
+
+
+/*COURSE AREA START*/
+.course {
+    width: 100%;
+    overflow: hidden;
+}
+.course-content {
+    width: 100%;
+    text-align: center;
+}
+.course-content h2{
+    padding-top: 100px;
+}
+.course-content p{
+    max-width: 720px;
+    color: #858d96;
+    margin: 50px 0;
+    display: inline-block;
+}
+.course-items {
+    width: 100%;
+}
+.course-item {
+    width: 30.5%;
+    float: left;
+    padding: 20px 20px 30px;
+    margin-right: 4%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    margin-bottom: 80px;
+}
+.course-item:last-child{
+    margin-right: 0;
+}
+.course-item img{
+    width: 100%;
+}
+.items-content {
+    text-align: center;
+}
+.items-content h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.items-content a{
+    color: #fff;
+    font-size: 14px;
+    background-color: #22A23F;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.items-content a i{
+    padding-left: 5px;
+}
+
+
+/*REGISTRATION AREA CSS*/
+.registration {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/count-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+}
+.small-cont {
+    width: 40%;
+    margin: auto;
+}
+.registration h1{
+    margin: 90px 0 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.times {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.times .time{
+    width: 20.5%;
+    float: left;
+    margin-right: 6%;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.times .time:last-child{
+    margin-right: 0;
+}
+.times .time h2{
+    font-size: 145%;
+}
+.times .time h5{
+    font-size: 90%;
+}
+.registration a{
+    color: #000;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+
+
+
+
+/*EXTRA COURSE CSS*/
+.course-ex {
+    width: 100%;
+    background-color: #FAFBFE;
+    overflow: hidden;
+}
+.course-ex-content {
+    width: 100%;
+    overflow: hidden;
+}
+.course-ex-content h2{
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.course-ex-items {
+    width: 100%;
+    overflow: hidden;
+}
+.course-ex-item {
+    width: 33%;
+    float: left;
+    padding: 40px;
+    margin: 10px 0;
+}
+.course-ex-item img{
+    width: 30%;
+}
+.course-ex-item h2{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #212529;
+}
+.course-ex-item p{
+    font-size: 14px;
+    color: #858d96;
+}
+
+
+
+/*REGTRATION GUIDE CSS*/
+.reg-guide {
+    width: 100%;
+    overflow: hidden;
+}
+.reg-guide h2{
+    text-align: center;
+    margin-top: 80px;
+}
+.reg-content {
+    width: 60%;
+    float: left;
+}
+.reg-content h2{
+    text-align: left;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.reg-content li{
+    margin-bottom: 20px;
+    display: inline-flex;
+    font-size: 16px;
+}
+.reg-content li i{
+    font-size: 12px;
+    padding-right: 5px;
+    margin-top: 5px;
+    color: #22a23f;
+}
+.reg-img {
+    width: 40%;
+    overflow: hidden;
+}
+.reg-img img{
+    display: block;
+    margin-top: 170px;
+    width: 95%;
+}
+
+
+
+/*COURSE STATICS CSS*/
+
+.course-stats {
+    width: 100%;
+    overflow: hidden;
+    background-color: #226A3C;
+}
+
+.course-stat {
+    width: 22%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin: 80px 0;
+}
+.course-stat h2{
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.course-stat p{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.course-stat h3{
+    font-size: 30px;
+}
+
+
+
+/*NEWS */
+.news {
+    width: 100%;
+    background-color: #FAFBFE;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.news h2{
+    text-align: center; 
+    font-size: 28px;
+}
+
+.news-list {
+    width: 30.5%;
+    float: left;
+    margin-right: 4%;
+    padding: 20px;
+}
+.news-list:last-child{
+    margin-right: 0;
+}
+.news-list img{
+    width: 100%;
+}
+.news-list h3{
+    padding: 15px 0;
+    font-size: 18px;
+    color: #212529;
+}
+.news-list p{
+    font-size: 14px;
+    color: #858d96;
+    line-height: 22px;
+}
+.news-list a{
+    font-size: 15px;
+    color: #278e42;
+    display: inline-block;
+    padding: 10px 0;
+    
+}
+
+
+/*STUDENT FEEDBACK*/
+.student-feed {
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.student-feed h2{
+    text-align: center; 
+    font-size: 28px;
+}
+
+.students {
+    width: 30.5%;
+    float: left;
+    padding: 20px;
+    margin-right: 4%;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+}
+.students:last-child{
+    margin-right: 0;
+}
+.students img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #858d96;
+}
+.students h5{
+    padding: 10px 0;
+    font-size: 14px;
+    color: #212529;
+    
+}
+.students p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #858d96;
+}
+
+
+
+/*FAQ*/
+.faq {
+    width: 100%;
+    overflow: hidden;
+    background-color: #FAFBFE;
+    padding: 60px 0;
+}
+.faq h2{
+    text-align: center; 
+    font-size: 28px;
+}
+
+
+.faq-lists {
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+}
+.faq-lists:last-child{
+    margin-right: 0;
+}
+.faq-lists li{
+    padding: 10px 0;
+}
+.faq-lists li a{
+    color: #000;
+    font-size: 18px;
+}
+.faq-lists li a:hover{
+    color: #278e42;
+}
+.faq-lists li .fas{
+    margin-right: 5px;
+}
+
+
+
+/*CONTACT*/
+.contact {
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.contact h2{
+    text-align: center; 
+    font-size: 28px;
+}
+
+.contact-area {
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+}
+.contact-area:last-child{
+    margin-right: 0;
+}
+.contact-area img{
+    width: 100%;
+}
+
+.contact-left {
+    padding: 40px 0;
+}
+.contact-left h5{
+    font-size: 15px;
+    color: #9DA3AB;
+    margin-bottom: 5px;
+}
+.contact-left p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #9DA3AB;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: #2E313A;
+}
+.copy-inf {
+    float: left;
+    color: #7e858e;
+    font-size: 14px;
+    margin: 30px 0 20px;
+}
+
+.social-link {
+    float: right;
+    margin: 20px 0 20px;
+}
+.social-link li{
+    float: left;
+}
+.social-link a i{
+    font-size: 13px;
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid #7e858e;
+    color: #7e858e;
+    margin: 5px;
+    
+}
+.social-link a:hover i{
+    color: #278e42;
+}
